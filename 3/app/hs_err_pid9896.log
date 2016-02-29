@@ -1,0 +1,114 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1880 bytes for char in C:\jdk7_32P\jdk7\hotspot\src\os\windows\vm\os_windows.cpp
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:58), pid=9896, tid=8180
+#
+# JRE version: (uninitialized)
+# Java VM: Java HotSpot(TM) Client VM (21.0-b17 mixed mode, sharing windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x00150000,0x001a0000],  sp=0x0019f038,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15ddbc]
+V  [jvm.dll+0x16f319]
+V  [jvm.dll+0x1436d4]
+V  [jvm.dll+0xa2940]
+C  [java.exe+0x1347]
+C  [java.exe+0x1db7]
+C  [java.exe+0x46b1]
+C  [java.exe+0x3115]
+C  [java.exe+0x337a]
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x013d0000 - 0x013fe000 	C:\Program Files\Java\jdk1.7.0\bin\java.exe
+0x77c10000 - 0x77d51000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76560000 - 0x76634000 	C:\Windows\system32\kernel32.dll
+0x75c40000 - 0x75c8b000 	C:\Windows\system32\KERNELBASE.dll
+0x761b0000 - 0x76250000 	C:\Windows\system32\ADVAPI32.dll
+0x77660000 - 0x7770c000 	C:\Windows\system32\msvcrt.dll
+0x77d60000 - 0x77d79000 	C:\Windows\SYSTEM32\sechost.dll
+0x76100000 - 0x761a2000 	C:\Windows\system32\RPCRT4.dll
+0x75f30000 - 0x75ff9000 	C:\Windows\system32\USER32.dll
+0x76000000 - 0x7604e000 	C:\Windows\system32\GDI32.dll
+0x75f20000 - 0x75f2a000 	C:\Windows\system32\LPK.dll
+0x76060000 - 0x760fd000 	C:\Windows\system32\USP10.dll
+0x746b0000 - 0x7484e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x773a0000 - 0x773f7000 	C:\Windows\system32\SHLWAPI.dll
+0x77640000 - 0x7765f000 	C:\Windows\system32\IMM32.DLL
+0x76640000 - 0x7670c000 	C:\Windows\system32\MSCTF.dll
+0x10000000 - 0x10064000 	C:\Windows\INCOPS3\icdcnl.dll
+0x764d0000 - 0x7655f000 	C:\Windows\system32\OLEAUT32.dll
+0x77710000 - 0x7786c000 	C:\Windows\system32\ole32.dll
+0x010b0000 - 0x01106000 	C:\Windows\INCOPS3\ICATCDLL.dll
+0x75380000 - 0x75389000 	C:\Windows\system32\VERSION.dll
+0x018d0000 - 0x01982000 	C:\Windows\INCOPS3\ESSPD.dll
+0x57650000 - 0x57697000 	C:\PaperSecu\PaperHK.dll
+0x01990000 - 0x019e1000 	C:\Windows\system32\WINSPOOL.DRV
+0x77360000 - 0x77395000 	C:\Windows\system32\WS2_32.dll
+0x76050000 - 0x76056000 	C:\Windows\system32\NSI.dll
+0x6f480000 - 0x6f6dd000 	C:\Windows\pcdrm\NSCFA.DLL
+0x6e5a0000 - 0x6e65e000 	C:\Program Files\Java\jdk1.7.0\bin\MSVCR100.dll
+0x76430000 - 0x76435000 	C:\Windows\system32\PSAPI.DLL
+0x020a0000 - 0x020b3000 	C:\Windows\pcdrm\NBID.dll
+0x76710000 - 0x7735b000 	C:\Windows\system32\SHELL32.DLL
+0x6f750000 - 0x6f758000 	C:\Windows\pcdrm\NSCPE.dll
+0x020c0000 - 0x020dc000 	C:\Windows\pcdrm\NFD01.dll
+0x75bf0000 - 0x75bfb000 	C:\Windows\system32\profapi.dll
+0x6f470000 - 0x6f47e000 	C:\Windows\pcdrm\NFD02.dll
+0x66960000 - 0x66a1e000 	C:\Program Files\Java\jdk1.7.0\jre\bin\msvcr100.dll
+0x61c80000 - 0x61fa1000 	C:\Program Files\Java\jdk1.7.0\jre\bin\client\jvm.dll
+0x00120000 - 0x00127000 	C:\Windows\system32\WSOCK32.dll
+0x741d0000 - 0x74202000 	C:\Windows\system32\WINMM.dll
+
+VM Arguments:
+java_command: <unknown>
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\DevEnv\RBTools;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Windows Imaging\;c:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\Perforce;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Perforce\DVCS\;C:\Program Files\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files\Microsoft Visual Studio\Common\Tools;C:\Program Files\Microsoft Visual Studio\VC98\bin
+USERNAME=xinyu.he
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 26 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 4 
+
+Memory: 4k page, physical 3145272k(499084k free), swap 3778380k(4752k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.0-b17) for windows-x86 JRE (1.7.0-b147), built on Jun 27 2011 02:25:52 by "java_re" with unknown MS VC++:1600
+
+time: Fri Feb 26 11:53:19 2016
+elapsed time: 0 seconds
+

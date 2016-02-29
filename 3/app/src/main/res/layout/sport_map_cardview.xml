@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3f51b4">
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/sport_map_baidumapview"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:clickable="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
