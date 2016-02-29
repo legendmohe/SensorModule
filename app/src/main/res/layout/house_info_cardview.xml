@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/house_info_tableview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/house_info_indicator_layout">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/house_info_uv_textview"
+                    android:layout_height="wrap_content"
+                    android:text="UV"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/cardview_info_textsize"
+                    android:layout_weight="1.4"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:id="@+id/house_info_uv_value_textview"
+                    android:layout_weight="1.4"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/cardview_info_textsize"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/house_info_hum_textview"
+                    android:layout_weight="1.4"
+                    android:layout_height="wrap_content"
+                    android:text="Humidity"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/cardview_info_textsize"
+                    android:layout_width="wrap_content" />
+
+                <TextView
+                    android:id="@+id/house_info_hum_value_textview"
+                    android:layout_weight="1.4"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/cardview_info_textsize"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_weight="1.0">
+
+                <TextView
+                    android:id="@+id/house_info_temp_textview"
+                    android:layout_weight="1.4"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/cardview_info_textsize"/>
+
+                <TextView
+                    android:id="@+id/house_info_temp_value_textview"
+                    android:layout_weight="1.4"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/cardview_info_textsize"/>
+            </TableRow>
+
+        </TableLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/house_info_indicator_layout"
+            android:background="#5262bb">
+            <TextView
+                android:id="@+id/house_info_indicator_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You should stay at home today"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_margin="10sp"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
